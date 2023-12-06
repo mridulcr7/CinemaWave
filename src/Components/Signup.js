@@ -3,6 +3,7 @@ import React from 'react';
 import background from "../Utilis/cinema-movie-concept_1302-12571.jpg";
 import { useSignup } from "../hooks/useSignup"
 import { useState } from "react"
+import Header from "./Header"
 
 
 const Signup = () => {
@@ -20,6 +21,7 @@ const Signup = () => {
 
     return (
         <div className="relative">
+            <Header />
             <div
                 className="bg-cover bg-center h-screen flex items-center justify-center"
                 style={{ backgroundImage: `url(${background})` }}

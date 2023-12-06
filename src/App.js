@@ -2,7 +2,6 @@ import React from 'react'
 import Login from "./Components/Login"
 import Signup from "./Components/Signup"
 import Browse from "./Components/Browse"
-import Header from "./Components/Header"
 import { useAuthContext } from './hooks/useAuthContext'
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
@@ -13,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
         <div className="pages">
           <Routes>
             <Route

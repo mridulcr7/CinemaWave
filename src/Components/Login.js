@@ -3,6 +3,7 @@ import React from 'react';
 import background from "../Utilis/cinema-movie-concept_1302-12571.jpg";
 import { useState } from "react";
 import { useLogin } from "../hooks/useLogin"
+import Header from "./Header"
 
 
 const Login = () => {
@@ -20,6 +21,7 @@ const Login = () => {
     return (
 
         <div className="relative">
+            <Header />
             <div
                 className="bg-cover bg-center h-screen flex items-center justify-center"
                 style={{ backgroundImage: `url(${background})` }}
@@ -49,11 +51,7 @@ const Login = () => {
                     <div>
                         {error && <div className="error">{error}</div>}
                     </div>
-                    <div className="mt-4 text-sm">
-                        <a href="#" className="hover:underline">Need help?</a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="hover:underline">Sign up now</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
